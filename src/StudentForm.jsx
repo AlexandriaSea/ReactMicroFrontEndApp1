@@ -24,7 +24,7 @@ const StudentForm = () => {
     return (
         <div>
             <div className="container" style={{ backgroundColor: 'lightyellow', padding: '150px', borderRadius: '250px', width: '400px' }}>
-                <p style={{ fontSize: '25px' }}>Saved Student Info</p>
+                <p style={{ fontSize: '25px' }}>Info from database</p>
                 <input type="text" value={studentName} style={{ fontSize: '25px' }} readOnly />
                 <br />
                 <input type="email" value={studentEmail} style={{ fontSize: '25px' }} readOnly />
@@ -32,7 +32,7 @@ const StudentForm = () => {
                 <input type="text" value={studentPhone} style={{ fontSize: '25px' }} readOnly />
             </div>
             <div className="container" style={{ backgroundColor: 'lightblue', padding: '150px', borderRadius: '250px', width: '400px' }}>
-                <p style={{ fontSize: '25px' }}>Input Student Info</p>
+                <p style={{ fontSize: '25px' }}>Input your data</p>
                 <form onSubmit={handleSubmit}>
                     <label style={{ fontSize: '25px' }}>Student Name: </label>
                     <input type="text" name="studentName" />
